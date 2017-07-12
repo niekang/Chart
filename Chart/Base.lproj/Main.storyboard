@@ -23,20 +23,31 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zGD-w4-wai" customClass="PieChart">
                                 <rect key="frame" x="20" y="20" width="200" height="200"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="C5X-9J-G2o"/>
                                     <constraint firstAttribute="width" constant="200" id="gPc-pI-ZrR"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ca-Bg-9Ou" customClass="BarChat">
+                                <rect key="frame" x="20" y="250" width="300" height="200"/>
+                                <color key="backgroundColor" red="0.3921568627" green="0.63921568630000003" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="JVb-2H-ZfL"/>
+                                    <constraint firstAttribute="height" constant="200" id="ZPH-Hr-x4c"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="7ca-Bg-9Ou" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="C7Q-AV-l7K"/>
+                            <constraint firstItem="7ca-Bg-9Ou" firstAttribute="top" secondItem="zGD-w4-wai" secondAttribute="bottom" constant="30" id="SKQ-dA-0KW"/>
                             <constraint firstItem="zGD-w4-wai" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="VNT-pk-cOF"/>
                             <constraint firstItem="zGD-w4-wai" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="XuD-RX-KpS"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="barChart" destination="7ca-Bg-9Ou" id="Sjk-aV-6lD"/>
                         <outlet property="pieChart" destination="zGD-w4-wai" id="SuZ-Rc-zcC"/>
                     </connections>
                 </viewController>

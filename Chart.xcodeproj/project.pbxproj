@@ -16,6 +16,7 @@
 		8244D87F1F15CE67000F751E /* ChartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8244D87E1F15CE67000F751E /* ChartTests.m */; };
 		8244D88A1F15CE67000F751E /* ChartUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8244D8891F15CE67000F751E /* ChartUITests.m */; };
 		8244D8991F15CF9D000F751E /* PieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 8244D8981F15CF9D000F751E /* PieChart.m */; };
+		8244D89C1F15F5EF000F751E /* BarChat.m in Sources */ = {isa = PBXBuildFile; fileRef = 8244D89B1F15F5EF000F751E /* BarChat.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		8244D88B1F15CE67000F751E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8244D8971F15CF9D000F751E /* PieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieChart.h; sourceTree = "<group>"; };
 		8244D8981F15CF9D000F751E /* PieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieChart.m; sourceTree = "<group>"; };
+		8244D89A1F15F5EF000F751E /* BarChat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarChat.h; sourceTree = "<group>"; };
+		8244D89B1F15F5EF000F751E /* BarChat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarChat.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				8244D86B1F15CE67000F751E /* ViewController.m */,
 				8244D8971F15CF9D000F751E /* PieChart.h */,
 				8244D8981F15CF9D000F751E /* PieChart.m */,
+				8244D89A1F15F5EF000F751E /* BarChat.h */,
+				8244D89B1F15F5EF000F751E /* BarChat.m */,
 				8244D86D1F15CE67000F751E /* Main.storyboard */,
 				8244D8701F15CE67000F751E /* Assets.xcassets */,
 				8244D8721F15CE67000F751E /* LaunchScreen.storyboard */,
@@ -282,6 +287,7 @@
 				8244D8991F15CF9D000F751E /* PieChart.m in Sources */,
 				8244D8691F15CE67000F751E /* AppDelegate.m in Sources */,
 				8244D8661F15CE67000F751E /* main.m in Sources */,
+				8244D89C1F15F5EF000F751E /* BarChat.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +439,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Chart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nk.Chart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,6 +451,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Chart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nk.Chart;
 				PRODUCT_NAME = "$(TARGET_NAME)";

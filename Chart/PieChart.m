@@ -17,6 +17,28 @@
 
 @implementation PieChart
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        [self setup];
+    }
+    return self;
+}
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    [self setup];
+}
+
+/**
+ 初始化
+ */
+- (void)setup {
+    self.backgroundColor = [UIColor whiteColor];
+}
+
+
 - (NSMutableArray *)percentArr {
     if (!_percentArr) {
         _percentArr = [NSMutableArray array];
@@ -65,7 +87,7 @@
 
 - (void)drawRect:(CGRect)rect {
     //无数据源无需绘制
-    if (!self.dataArr.count) {
+    if (!self.dataArr) {
         return;
     }
     //未设置颜色随机生成
@@ -101,7 +123,7 @@
         [(UIColor *)self.colorArr[i] setFill];
         //填充
         [path fill];
-        //划线
+        //画线
         [path stroke];
     }
 }
